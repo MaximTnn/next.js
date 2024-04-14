@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function ProductDetailsLayout({
@@ -7,6 +8,7 @@ export default function ProductDetailsLayout({
 }) {
     return (
        <>
+        <Link href='/products'>Back</Link>
         {children}
         <h2>Feature products</h2>
         {/* Carousel here*/}
