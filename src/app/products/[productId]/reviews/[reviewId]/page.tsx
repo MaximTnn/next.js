@@ -15,10 +15,10 @@ export default function ReviewDetail({params}: {
 }) {
     const random = getRandomInt(0, 1)
 
-    // Имитация ошибки
-    if (random === 1) {
-        throw new Error('Error loading review')
-    }
+    // // Имитация ошибки
+    // if (random === 1) {
+    //     throw new Error('Error loading review')
+    // }
 
     if (parseInt(params.reviewId) > 1000) {
         notFound()
