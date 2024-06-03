@@ -9,3 +9,16 @@ export default function Home() {
         </div>
     )
 }
+
+// Базовая иерархия компоннетов в Next.js
+// <Layout>
+//     <Template>
+//         <ErrorBoundary fallback={<Error />}>
+//             <Suspense fallback={<Loading />}>
+//                 <ErrorBoundary fallback={<NotFound />}>
+//                     <Page />
+//                 </ErrorBoundary>
+//             </Suspense>
+//         </ErrorBoundary>
+//     </Template>
+// </Layout>
