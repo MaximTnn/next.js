@@ -2,7 +2,7 @@ import Card from '@/components/Card/Card';
 import getRandomInt from "@/helpers/getRandomInt";
 import Link from 'next/link';
 
-export default function Notifications() {
+export default function ArchivedNotifications() {
     const random = getRandomInt(0, 1)
 
     // // искуственная имитация ошибки
@@ -12,8 +12,8 @@ export default function Notifications() {
 
     return (
         <Card>
-            <h2>Notifications</h2>
-            <Link href="/complex-dashboard/archived">Archiver</Link>
+            <h2>Archived Notifications</h2>
+            <Link href="/complex-dashboard">default</Link>
         </Card>
     )
 }
