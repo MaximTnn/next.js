@@ -8,14 +8,19 @@ export default function DashboardLayout({
     users, // complex-dashboard/@users/page.tsx
     revenue, // complex-dashboard/@revenue/page.tsx
     notifications, // complex-dashboard/@notifications/page.tsx
+    login, // complex-dashboard/@login/page.tsx
 }: {
     children: React.ReactNode
     users: React.ReactNode
     revenue: React.ReactNode
     notifications: React.ReactNode
+    login: React.ReactNode
 }) {
-    return (
-        <>
+    const isLoggedIn = false;
+
+    console.log(login);
+    return isLoggedIn ? (
+        <div>
             <div>{children}</div>
             <div style={{ display: 'flex' }}>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
@@ -26,6 +31,8 @@ export default function DashboardLayout({
                     {notifications}
                 </div>
             </div>
-        </>
+        </div>
+    ) : (
+        login
     );
 }
