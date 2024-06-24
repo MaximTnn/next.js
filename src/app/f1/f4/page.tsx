@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import React from 'react';
 
+// https://nextjs.org/docs/app/building-your-application/routing/intercepting-routes
+
 export default function F4() {
     return (
         <>
